@@ -1,0 +1,410 @@
+.nav.navbar-nav.navbar-right li a {
+    color: rgb(250, 250, 250);
+}
+.navbar.navbar-inverse {
+    min-height: 70px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white !important;    
+}
+.navbar-inverse .navbar-nav > li >a:hover{
+    opacity: 0.5;
+}
+.navbar.navbar-inverse li a{
+    color: #000000 ;
+    padding: 20px;
+    font-size:16px;
+}
+/*
+.nav.navbar-nav li a{
+    color: #a84141;
+}*/
+.nav.navbar-nav >.active li a {
+    color: #a84141;
+    
+}
+
+.dropdown-menu li >a{
+    background:#ffffff;
+    color:rgb(153, 25, 25); 
+}
+/*
+.navbar-brand {
+    position: relative;
+    background: url(../images/ikk.jpeg);
+    width: 75px;
+    height: 70px;
+    margin:7px;
+    background-size: contain;
+    
+}
+*/
+.col{
+    border: dotted;
+    display: flex; 
+}
+/*    main frame        */
+
+
+.relative {
+    position: relative;
+}
+
+.layed {
+    position: absolute;
+    bottom: 0;
+}
+.big-grid-overlay.layed {
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1;
+    color: white;
+}
+
+.big-grid-1.clearfix {
+    position: relative;
+}
+
+.col-md-6.relative a::before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+    
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
+    
+}
+
+.grid-inner {
+    overflow: hidden !important;
+    display: block;
+    position: relative;
+}
+
+.grid-inner img{
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    max-width: none;
+    width: 100%;
+}
+
+.col-md-6.relative a:hover img{
+     opacity: 0.9;
+    -webkit-transform: scale3d(1.1,1.1,1);
+    transform: scale3d(1.1,1.1,1);
+}
+
+.col-xs-12.small-grid-group {
+    padding: 0px;
+}
+
+
+.col-md-6.relative.medium-grid, .col-md-6.relative.big-grid {
+    padding: 0px;
+} 
+
+.big-grid-overlay h3 , .grid-2-category, .posts-category{
+    font-family: poppins;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.grid-post-meta{
+    font-family: poppins;
+}
+
+.grid-2-category, .posts-category {
+    background: #16a085;
+    border: 0px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 1px 4px;
+}
+.posts-category {
+    position: absolute;
+    left: 30px;
+    z-index: 9999;
+    top: 30px;
+}
+
+.col-xs-12.medium-grid {
+    padding-top: 10px;
+}
+.col-xs-12.medium-grid {
+    padding: 10px 0px 0px 0px;
+}
+
+.col-xs-12.small-grid-group {
+    padding: 10px 0px 0px 0px;
+}
+
+.col-xs-6.relative.small-grid {
+    padding: 0px;
+}
+.col-xs-12.medium-grid h3{
+    font-size: 13px;
+}
+
+.col-xs-6.relative.small-grid h3 {
+    font-size: 10px;
+}
+
+.col-xs-6.relative.small-grid.mobile-padded {
+    padding: 0px 5px 0px 0px;
+}
+.col-xs-6.relative.small-grid.mobile-padded:last-of-type {
+    padding-right: 3px !important;
+}
+
+/*Media Queries */
+
+
+@media only screen and (min-width: 768px){
+    .big-grid-overlay.layed{
+        padding: 20px;
+    }
+    .big-grid-overlay.layed {
+    padding: 50px 60px;
+    }
+    .col-xs-6.relative.small-grid h3 {
+    font-size: 20px;
+    }
+    .col-xs-12.medium-grid h3 {
+    font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .col-xs-12.medium-grid  {
+    padding: 0px 0px 5px 5px;
+    }
+    .col-xs-12.small-grid-group{
+    padding: 0px 0px 0px 5px; 
+    }
+    .col-xs-12.small-grid-group img {
+    height: 200px;
+    }
+    .col-xs-12.medium-grid img {
+    height: 205px;
+    }
+    .big-grid-overlay.layed {
+    padding: 30px 30px;
+    }
+    .col-xs-6.relative.small-grid.mobile-padded:last-of-type {
+    padding-right: 0px !important;
+    }
+    .col-md-6.relative.big-grid img {
+    height: 410px;
+    }
+}
+
+/*service2*/
+.products{
+    padding: 50px;
+    margin-left: 2px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.gray{
+    border: none;
+    color:#000000;
+    background-color: rgb(255, 255, 255);
+}
+.products > div{
+    padding-right: 20px;
+    padding-left: 10px;
+    background-color: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: none;
+    padding-bottom: 100px;
+}
+
+  /* Using selectors like this
+      is covered in another chapter.*/
+  .products > div:nth-child(1){
+    margin: 0 2em;
+  }
+  .products > div:nth-child(2){
+    margin: 0 2em;
+  }
+  .products > div:nth-child(3){
+    margin: 0 2em;
+  }
+
+
+/***veveiwseis pan***/
+  .drop-shadow{-webkit-box-shadow:0 0 5px 2px rgba(0,0,0,.25);box-shadow:0 0 5px 2px rgba(0,0,0,.25)}
+  .source{color:#000}
+  .NewRed{color:red;font-size:12px}
+  .more-less{float:right;color:#7476eb}
+  body{overflow-x:hidden}
+  .btn{background-color:#eb749f;color:white;border-radius:12px;}
+  .btn:hover{background-color:#777;color:white;box-shadow:0 0 20px rgba(0, 0, 0, 0.20);}
+  .panel{transition:all 200ms ease-out;}
+  .panel:hover{box-shadow:0 0 20px rgba(0, 0, 0, 0.40);} 
+  h1{color:#7480eb;font-weight:300;} 
+  a{color:#74a8eb;-webkit-transition:300ms;-moz-transition:300ms;-o-transition:300ms;transition:300ms;}
+
+
+/**********FOOTER**************/
+
+.foot > div{
+    width: 100%;
+    position: relative;
+    bottom: 0%;
+    background-color: rgb(178, 182, 184);
+}
+
+/**end of footer**/
+/***retire.html**/
+/* Post tab custom css  */
+.populat-post-tab {
+    border: 1px solid #e0e0e0;
+}
+
+.populat-post-tab .nav-tabs {
+    border: none;
+}
+
+.populat-post-tab .nav-tabs > li {
+    width: 33.33333333333333%;
+    text-align: center;
+}
+
+.populat-post-tab .nav-tabs > li a {
+    background: #f0f5f7;
+    margin-right: 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    display: block;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 15px;
+    color: #3a3c41;
+    transition: all 0.01s;
+}
+
+.populat-post-tab .nav-tabs > li.active a {
+    border-top: 2px solid #018EBB;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: #ffffff;
+}
+
+.tab-post-list-wrap {
+    margin: 15px 0;
+    padding: 0 35px;
+}
+
+.tab-post-thumb {
+    margin: 0 15px 0 0;
+}
+
+.tab-post-thumb figure {
+    width: 65px;
+}
+
+.tab-post-thumb figure img{
+    max-width: 70px;
+}
+
+.tab-post-title h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.tab-post-title span {
+    font-size: 12px;
+    color: #999ca5;
+}
+
+.tab-post-list ul{
+    list-style: none;
+}
+
+.tab-post-list ul li:before {
+    content: "";
+    width: 2px;
+    height: 8px;
+    padding: 0 4px;
+    margin-right: 5px;
+    background: #018EBB;
+    display: inline-block;
+}
+
+.tab-post-list ul li small {
+    display: block;
+}
+
+.tab-post-list ul li small abbr {
+    font-size: 11px;
+    line-height: 20px;
+    text-decoration: none;
+    border: none;
+}tab-post-thumb
+
+/**ergodo**/
+.service-section {
+    padding: 4em 0 3.5em;
+}
+.botmargin {
+    margin-bottom: 1em;
+    text-align:center;
+
+}
+
+.icon {
+    color : rgb(34, 0, 128);
+    padding:15px;
+    font-size:50px;
+}
+.service-section h4 a {
+    
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #161616;
+    padding-bottom: 0em;
+    position: relative;
+    
+}
+.service-section h4 a:hover {
+    color: #8e0082;
+}
+
+
+/***GO BACK BUTTON**/
+.wrapp{
+    text-align: center;
+}
+
+
+.backbtn {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/****/
