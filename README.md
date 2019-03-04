@@ -8,4 +8,4 @@ Redesigned the website of the largest Social Security Organisation(IKA) in Greec
 * MySQL
 
 
-[View Homepage](https://github.com/kritonp/ika_site/blob/master/images/arxiki.PNG "Preview Homepage")
+[View Homepage](https://github.com/kritonp/IKA/blob/master/images/arxiki.PNG "Preview Homepage")
